@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Magest1ckkz/magest1ckkz.github.io/refs/heads/main/icon.png"/>
+    <title>Modern Pictochat</title>
+  </head>
+  <body>
+    <div class="msgbox" id="chatlog" oncontextmenu="return false">
+    </div>
+
+    <div id="canvas_div" style="overflow-x: auto;">
+      <canvas id="canvas" width="800" height="400" oncontextmenu="return false"></canvas>
+      <form>
+        <input type='text' id="textInput" autocomplete="off" style="width: 577px;"/><button id="sendMsg" onclick="javascript:clearArea(); return false;">Send</button><button onclick="javascript:clearArea();return false;">Clear</button><select id="selWidth">
+            <option value="2">2</option>
+            <option value="5" selected="selected">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+        </select><select id="selColor">
+          <option value="black" selected="selected">black</option>
+          <option value="blue">blue</option>
+          <option value="red">red</option>
+          <option value="green">green</option>
+          <option value="yellow">yellow</option>
+          <option value="violet">violet</option>
+          <option value="gray">gray</option>
+          <option value="white">white</option>
+      </select>
+      </form>
+      </div>
+
+  </body>
+  <script src="script.js"></script>
+</html>
